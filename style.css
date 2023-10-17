@@ -1,0 +1,198 @@
+/* Variables */
+:root {
+  --blue: #638caa;
+  --light-blue: #b7ced6;
+  --grey: #9aa7b8;
+  --light-grey: #dbdbdb;
+  --brown: #bcb9aa;
+  --green: #9ce0d1;
+  --red: #f09e84;
+  --purple: #514354;
+}
+
+/* font-color */
+a,
+h2,
+p {
+  color: white;
+}
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 1rem;
+}
+
+/* Base styles */
+body {
+  min-height: 100vh;
+  width: 100%;
+  background-color: var(--blue);
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+}
+/* Header styles */
+header {
+  padding-bottom: 0.3rem;
+}
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0rem 8rem;
+}
+
+.logo img {
+  width: 3%;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+a {
+  text-decoration: none;
+
+  font-size: 1rem;
+}
+
+ul li a:hover {
+  text-decoration: underline var(--red);
+  color: var(--grey);
+}
+
+.banner-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-img img {
+  width: 35%;
+}
+
+/* Home section styles */
+#home {
+  display: flex;
+}
+
+#home div {
+  text-align: center;
+  width: 25%;
+}
+
+#home div i {
+  font-size: 3rem;
+  padding-top: 0.5rem;
+}
+
+#home div:nth-of-type(1) {
+  background-color: var(--light-grey);
+}
+#home div:nth-of-type(2) {
+  background-color: var(--brown);
+}
+
+#home div:nth-of-type(3) {
+  background-color: var(--green);
+}
+
+#home div:nth-of-type(4) {
+  background-color: var(--grey);
+}
+
+/* Device img/description styles */
+
+.device-img {
+  width: 50%;
+  background-color: var(--light-blue);
+}
+.device-img img {
+  width: 25%;
+  padding: 1rem 0rem 0.5rem 0rem;
+}
+
+.device-description {
+  width: 50%;
+}
+
+.device-description h2 {
+  text-align: center;
+  margin: 0.5rem 0rem 1.5rem 0rem;
+}
+
+.device-description p {
+  text-indent: 30px;
+  padding: 0rem 1rem 1rem 1rem;
+  text-align: left;
+}
+
+#ipad .device-description {
+  background-color: var(--grey);
+}
+
+#iphonex .device-description {
+  background-color: var(--brown);
+}
+
+#macbook .device-description {
+  background-color: var(--blue);
+}
+
+.empty-space {
+  background-color: var(--red);
+  margin-bottom: 1rem;
+  padding-top: 1rem;
+}
+
+.statistics div {
+  width: 33.33%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.statistics div h3 {
+  padding: 0.5rem 0rem 1.5rem 0rem;
+}
+.statistics div p {
+  font-size: 0.8rem;
+  padding-bottom: 1.5rem;
+}
+
+.statistics div:nth-of-type(1) {
+  background-color: var(--grey);
+}
+
+.statistics div:nth-of-type(2) {
+  background-color: var(--green);
+}
+
+.statistics div:nth-of-type(3) {
+  background-color: var(--brown);
+}
+
+.social-media {
+  padding: 1.5rem;
+  gap: 10rem;
+}
+
+footer div {
+  text-align: center;
+  background-color: var(--purple);
+  padding: 1rem 0rem;
+}
+
+footer div p {
+  font-size: 0.7rem;
+}
